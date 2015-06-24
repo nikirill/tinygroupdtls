@@ -1,2 +1,2 @@
 # tinygroupdtls
-Lightweigh DTLS implementation with group communication extension 
+Lightweigh DTLS implementation with an extension for group communication
