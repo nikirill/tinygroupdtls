@@ -1,0 +1,32 @@
+# This is a -*- Makefile -*-
+
+ifeq ($(TARGET), redbee-econotag)
+CFLAGS += -DSHA2_USE_INTTYPES_H=1 -DLITTLE_ENDIAN=3412 -DBYTE_ORDER=LITTLE_ENDIAN
+endif
+
+ifeq ($(TARGET), cc2538dk)
+CFLAGS += -DSHA2_USE_INTTYPES_H=1 -DLITTLE_ENDIAN=3412 -DBYTE_ORDER=LITTLE_ENDIAN
+endif
+
+ifeq ($(TARGET), native)
+CFLAGS += -DSHA2_USE_INTTYPES_H=1
+endif
+
+ifeq ($(TARGET), minimal-net)
+CFLAGS += -DSHA2_USE_INTTYPES_H=1
+endif
+
+CFLAGS += -DDTLSv12 -DWITH_SHA256
+#-DWITH_SHA256
+
+#ifeq ($(WITH_SHA2_ACCELERATOR), 1)
+#${info INFO: compiling with DTLS}
+
+ifeq ($(WITH_GROUP_RESPONSE), 1)
+tinygroupdtls_src = dtls.c crypto.c hmac.c rijndael.c sha2.c ccm.c netq.c dtls_time.c peer.c group.c key_derivation.c
+else
+tinygroupdtls_src = dtls.c crypto.c hmac.c rijndael.c sha2.c ccm.c netq.c dtls_time.c peer.c group.c
+endif
+
+#tinygroupdtls_src = dtls.c crypto.c hmac.c rijndael.c sha2.c ccm.c netq.c dtls_time.c peer.c          # Without any group communication
+#tinygroupdtls_src = dtls.c crypto.c hmac.c rijndael.c sha2.c ccm.c netq.c debug.c dtls_time.c peer.c  # Add debug.c to compile in debug mode
