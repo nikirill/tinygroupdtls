@@ -8,7 +8,19 @@ The purpose of the extension is to make it possible to secure multicast messages
 Protection of multicast messages is implemented according to the idea presented by DICE Working group of IETF [2].
 A mechanism for protection of unicast responses to multicast requests is intially porposed by M.Tiloca in [3] and improved during the work.
 
+1. Protection of multicast messages can be turned by defining it in a config file of an application as
 
+	#define WITH_MUTLICAST 1
+
+which makes code related to multicast protection of tinygroupdtls being executed. If there are response messages from multicast listeners in this mode, the responses can be protected using established end-to-end dtls sessions with the multicast client.
+
+2. Additional functionality for protection of unicast responses to a mutlicast request using group security material can be turned on by defining additionally
+
+	#define WITH_GROUP_RESPONSE 1
+
+Also, NOTE that compilation command needs to include this flag. In Contiki, a compilation command for cc2538dk platform would look like
+
+	make TARGET=cc2538dk WITH_GROUP_RESPONSE=1
 
 [1] http://kth.diva-portal.org/smash/get/diva2:847246/FULLTEXT01.pdf
 [2] https://datatracker.ietf.org/doc/draft-keoh-dice-multicast-security/
