@@ -10,14 +10,14 @@ A mechanism for protection of unicast responses to multicast requests is intiall
 
 1. Protection of multicast messages can be turned by defining it in a config file of an application as
 
-#define WITH_MUTLICAST 1
+	"#define WITH_MUTLICAST 1"
 
 which makes code related to multicast protection of tinygroupdtls being executed. If there are response messages from multicast listeners in this mode, the responses can be protected using established end-to-end dtls sessions with the multicast client.
 'example-mcast-secure-communication' uses this scenario.
 
 2. Additional functionality for protection of unicast responses to a mutlicast request using group security material can be turned on by defining additionally
 
-#define WITH_GROUP_RESPONSE 1
+	"#define WITH_GROUP_RESPONSE 1"
 
 Also, NOTE that compilation command needs to include this flag. In Contiki, a compilation command for cc2538dk platform would look like
 
