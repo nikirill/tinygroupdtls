@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/kirill/!svn/ver/70/er-coap-13-mcast-dtls
+END
+er-coap-13-separate.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/kirill/!svn/ver/70/er-coap-13-mcast-dtls/er-coap-13-separate.c
+END
+er-coap-13-engine.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/kirill/!svn/ver/94/er-coap-13-mcast-dtls/er-coap-13-engine.c
+END
+Makefile.er-coap-13-mcast-dtls
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/kirill/!svn/ver/70/er-coap-13-mcast-dtls/Makefile.er-coap-13-mcast-dtls
+END
+er-coap-13.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/kirill/!svn/ver/70/er-coap-13-mcast-dtls/er-coap-13.h
+END
+er-coap-13-transactions.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/kirill/!svn/ver/70/er-coap-13-mcast-dtls/er-coap-13-transactions.c
+END
+er-coap-13-separate.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/kirill/!svn/ver/70/er-coap-13-mcast-dtls/er-coap-13-separate.h
+END
+er-coap-13-engine.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/kirill/!svn/ver/70/er-coap-13-mcast-dtls/er-coap-13-engine.h
+END
+er-coap-13-transactions.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/kirill/!svn/ver/70/er-coap-13-mcast-dtls/er-coap-13-transactions.h
+END
+er-coap-13-observing.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/kirill/!svn/ver/70/er-coap-13-mcast-dtls/er-coap-13-observing.c
+END
+er-coap-13.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/kirill/!svn/ver/70/er-coap-13-mcast-dtls/er-coap-13.c
+END
+er-coap-13-observing.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/kirill/!svn/ver/70/er-coap-13-mcast-dtls/er-coap-13-observing.h
+END
