@@ -1,4 +1,4 @@
-all: er-example-server er-example-client
+all: server-example multicast-client-example
 
 
 # variable for this Makefile
